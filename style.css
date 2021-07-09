@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: white;
+}
+section{
+   padding-top: 50px;
+   width: 95%;
+   /* max-width: 400px; */
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+h1{
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+}
+.main{
+    border:1px solid gray;
+    width: 100%;
+}
+form{
+    width: 100%;
+    padding: 5px;
+}
+form>div{
+    margin-bottom: 1rem;
+}
+form>div:last-of-type{
+    margin-bottom: 5px;
+}
+label{
+    margin-bottom: .5rem;
+    display: block;
+    text-transform: capitalize;
+}
+input{
+    display: block;
+    width: 100%;
+    padding:.5rem 1rem ;
+}
+.header{
+    background-color: gray;
+    width: 100%;
+    padding: 2rem 2rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+input[type='submit']{
+    color: white;
+    border: none;
+    background-color: dodgerblue;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+table{
+    width: 100%;
+    text-align: left;
+    margin-top: 2rem;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+td{
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0;
+}
+thead{
+    background-color: gray;
+    color: white;
+}
+th{
+    text-transform: capitalize;
+    padding: .5rem 5px;
+    }
+h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: .5rem;
+}
+.alert-box{
+    height: 2rem;
+    margin: 5px;
+    margin-bottom: .5rem;
+}
+.counter{
+    width: 100%;
+    padding: .5rem;
+    border-top: 1px solid gray;
+
+}
+.alert{
+    width: 100%;
+    padding:.5rem 1rem;
+    text-transform: initial;
+    color: white;
+}
+.error{
+    background-color: red;
+}
+.success{
+    background-color: green;
+}
+.warning{
+    background-color: green;
+}
+.remove-book{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 0;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+}
+@media screen and (min-width: 800px) {
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        align-items: flex-start;
+        width: 80%;
+        max-width: 1000px;
+
+    }
+    table{
+        margin-top: 0;
+    }
+}

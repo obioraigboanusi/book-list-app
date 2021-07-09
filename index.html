@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="main">
+            <div class="header">
+                <h1>Book List App</h1>
+            </div>
+            <div class="alert-box" id="alert-box"></div>
+            <form id="book-form">
+                <div>
+                    <label for="title">Book title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div>
+                    <label for="author">author</label>
+                    <input type="text" name="author" id="author">
+                </div>
+                <div>
+                    <label for="isbn">ISBN</label>
+                    <input type="text" name="isbn" id="isbn">
+                </div>
+
+                <div>
+                    <input type="submit" value="submit" id="isbn">
+                </div>
+
+            </form>
+        </div>
+        <div>
+            <header>
+                <h2>List of books</h2>
+                <div class="counter">
+                    <p>Total books added: <span id="counter"></span></p>
+                </div>
+            </header>
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>title</th>
+                        <th>author</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+    <script src="./appes6.js"></script>
+</body>
+
+</html>
